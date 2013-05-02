@@ -13,7 +13,22 @@ int rec (int n)
     }
 }
 
+int iter (int n)
+{
+    int a = 2, b = 1, c = 0, i;
+
+    for(i=0; i<n; i++)
+    {
+	a = a + 2*b + 3*c;
+	b = a - 2*b - 3*c;
+	c = (a - b - 3*c)/2;
+    }
+
+    return c;
+}
+
 int main()
 {
     printf("rec = %d\n", rec(20));
+    printf("rec = %d\n", iter(20));    
 }
