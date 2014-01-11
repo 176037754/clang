@@ -32,5 +32,5 @@ double sqrt ( int n )
 int main()
 {
     printf("sqrt = %f\n", sqrt(13));
-    return 0;
+    return 1;
 }
